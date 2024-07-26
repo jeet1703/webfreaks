@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danjisk:wght@400;700&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+.font-Danjisk {
+  font-family: 'Danjisk', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
+}
