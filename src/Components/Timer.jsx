@@ -30,11 +30,11 @@ function Timer() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center px-4 py-6 bg-black">
+    <div className="relative z-20 flex flex-col items-center px-4 py-6 bg-black">
       <div className="text-center text-white text-3xl mb-6 md:text-4xl font-Danjisk">
         App Launches In
       </div>
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <Card time={timeLeft.days} title="DAYS" />
         <Card time={timeLeft.hours} title="HOURS" />
         <Card time={timeLeft.minutes} title="MINS" />
@@ -46,17 +46,17 @@ function Timer() {
 
 function Card({ time, title }) {
   return (
-    <div className="w-full md:w-40 lg:w-48">
-      <div className="bg-[#912BBC] rounded-md p-6 text-center">
+    <div className="w-20 sm:w-24 md:w-40 lg:w-48">
+      <div className="bg-[#912BBC] rounded-md p-4 md:p-6 text-center">
         <div className="flex flex-col items-center gap-3">
           <div
-            className="text-4xl md:text-5xl lg:text-6xl text-white"
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white"
             style={{ fontFamily: 'Danjisk, sans-serif' }}
           >
             {time}
           </div>
           <div
-            className="text-xl md:text-2xl lg:text-3xl text-[#FFB200]"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FFB200]"
             style={{ fontFamily: 'Danjisk, sans-serif' }}
           >
             {title}

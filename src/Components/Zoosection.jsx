@@ -12,16 +12,17 @@ const Zoosection = () => {
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 z-10"></div>
 
       {/* Mask Image */}
       <img
         src="/Mask.png"
         alt="Mask"
-        className="absolute z-0 object-cover"
+        className="absolute z-20 object-cover"
+        style={{ width: '100%', height: '100%' }} // Adjust size as needed
       />
 
-      <div className="relative z-10 flex flex-col items-center text-center mb-10">
+      <div className="relative z-30 flex flex-col items-center text-center mb-10">
         <p className="text-white text-2xl md:text-4xl mt-20 mb-8 font-nunito">
           One more thing...
         </p>
@@ -30,7 +31,7 @@ const Zoosection = () => {
         <img src="/phone.png" alt="Phone" className="w-full md:max-w-2xl mb-8" />
 
         <div className="flex items-center justify-center w-full max-w-lg space-x-4"> {/* Adjusted spacing */}
-          <button className="border border-gray-200 text-white hover:bg-yellow-400 hover:text-black font-bold py-2 px-8 rounded-md flex items-center space-x-2">
+          <button className="border border-gray-200 text-white hover:text-yellow-400  font-bold py-2 px-8 rounded-md flex items-center space-x-2">
             <span>Know More</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,12 +49,13 @@ const Zoosection = () => {
             </svg>
           </button>
           <p className="text-gray-300 flex items-center">
-            This is <a href="#" className="underline ml-1">magic</a>
+            This is <a href="#" className="underline ml-1 hover:text-yellow-500">magic</a>
           </p>
         </div>
       </div>
       
     </div>
+    
   );
 };
 

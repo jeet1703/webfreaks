@@ -1,15 +1,23 @@
 import React from 'react';
 
-
 const Div = () => {
   return (
-    <div className="bg-black text-white p-10">
-      <div className="flex justify-between items-center">
-        <div>
-          <h1 className="text-2xl font-bold">You really dive deep, huh!</h1>
-          <p className="text-lg">Guess what, we love it too</p>
+    <div
+      style={{
+        backgroundImage: `url(/Rectangles.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "25vh",
+      }}
+      className="relative text-white  md:p-10 flex justify-center items-center overflow-hidden"
+    >
+      <div className="relative flex justify-center items-center z-10 mx-auto">
+        <div className="text-center font-nunito md:ms-20">
+          <h1 className="text-lg text-gray-200 md:text-4xl font-thin ">You really dive deep, huh!</h1>
+          <p className="text-2xl md:text-4xl font-semibold">Guess what, we love it too</p>
         </div>
-        <img src="./person.png" alt="person" className="w-24 h-24" />
+        <img src="./person.png" alt="person" className="w-24 h-24 md:w-48 md:h-48  " />
       </div>
     </div>
   );

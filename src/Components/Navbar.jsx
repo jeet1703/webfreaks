@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-24">
           {navigationLinks.map((item) => (
             <a
               key={item.id}

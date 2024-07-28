@@ -8,6 +8,8 @@ import Stairs from './Components/Stairs'
 import Div from './Components/Div'
 import Timer from './Components/Timer'
 import Person from './Components/Person'
+import About from './Components/About'
+import Proposition from './Components/Proposition'
 
 function App() {
   
@@ -18,7 +20,9 @@ function App() {
    
     <Navbar/>
     <Hero/>
+    <About/>
     <Div/>
+    <Proposition/>
     <Stairs/>
     <Timer/>
     <Zoosection/>
