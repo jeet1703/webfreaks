@@ -12,10 +12,11 @@ const Proposition = () => {
 
         {/* Right side text box with image */}
         <div
-          className="w-full md:w-2/4 h-1/4 md:h-full bg-no-repeat bg-contain flex justify-center items-center z-20 md:my-10"
+          className="w-full md:w-1/2 h-1/2 md:h-full flex justify-center items-center z-20"
           style={{
             backgroundImage: 'url("/textbox.png")',
             backgroundSize: 'contain',
+            backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
           }}
         >
@@ -27,12 +28,9 @@ const Proposition = () => {
       <img
         src="/cloud.svg"
         alt="Cloud"
-        className="absolute  bottom1/2 right-20 md:right-0 md:top-0 md:translate-x-0 z-10"
+        className="absolute bottom-80 md:right-0 md:top-0 md:translate-x-0 z-10"
         style={{ width: '20%', height: 'auto' }} // Adjust size for responsiveness
       />
-
-      {/* Top decoration image */}
-      
     </div>
   );
 };
