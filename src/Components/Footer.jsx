@@ -12,7 +12,7 @@ function Footer() {
     <footer className="bg-purple-700 text-white py-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 mx-8">
-          <h2 className="text-lg md:text-2xl font-bold text-yellow-400 mb-4 md:mb-0">
+          <h2 className="text-lg md:text-2xl font-bold text-yellow-400 mb-4 md:mb-0 font-dangsik">
             Join our newsletter to follow our news
           </h2>
           <div className="flex items-center space-x-4">

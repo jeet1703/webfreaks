@@ -28,7 +28,7 @@ const Proposition = () => {
       <img
         src="/cloud.svg"
         alt="Cloud"
-        className="absolute bottom-80 md:right-0 md:top-0 md:translate-x-0 z-10"
+        className="absolute hidden md:block md:right-0 md:top-0 md:translate-x-0 z-10"
         style={{ width: '20%', height: 'auto' }} // Adjust size for responsiveness
       />
     </div>
