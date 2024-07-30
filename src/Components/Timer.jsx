@@ -33,10 +33,10 @@ function Timer() {
         className="absolute z-10 w-full bottom-0 md:top-0.5 mix-blend-screen"
       />
       <div className="relative z-20 flex flex-col items-center md:mt-10">
-        <div className="text-center text-white text-3xl mb-16 md:text-4xl font-Danjisk">
+        <div className="text-center text-white text-3xl mb-16 md:text-4xl font-quicksand">
           App Launches In
         </div>
-        <div className="flex flex-wrap justify-center gap-4 font-Danjisk font-bold" >
+        <div className="flex flex-wrap justify-center gap-4 font-protest font-bold">
           <Card time={timeLeft.days} title="DAYS" />
           <Card time={timeLeft.hours} title="HOURS" />
           <Card time={timeLeft.minutes} title="MINS" />
@@ -49,17 +49,28 @@ function Timer() {
 
 function Card({ time, title }) {
   return (
-    <div className="w-20 sm:w-24 md:w-40 lg:w-48">
-      <div className="bg-[#912BBC] rounded-md p-4 md:p-6 text-center">
+    <div className="relative w-20 sm:w-24 md:w-44 lg:w-52 overflow-hidden">
+      <img
+        src="startsm.svg"
+        alt=""
+        className="absolute z-10 top-2 left-2 w-4 h-4 opacity-50 md:w-6 md:h-6"
+      />
+      <img
+        src="cloudsm.svg"
+        alt=""
+        className="absolute z-10 top-10 right-4 w-4 h-4 opacity-50 md:w-6 md:h-6"
+      />
+      <img
+        src="startmd.svg"
+        alt=""
+        className="absolute z-10 bottom-4 left-6 w-4 h-4 opacity-50 md:w-6 md:h-6"
+      />
+      <div className="relative z-0 bg-[#912BBC] rounded-md p-4 md:p-8 text-center">
         <div className="flex flex-col items-center gap-3">
-          <div
-            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white font-dangsik"
-          >
+          <div className="text-2xl sm:text-3xl md:text-6xl lg:text-6xl text-white font-dangsik">
             {time}
           </div>
-          <div
-            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FFB200] font-dangsik"
-          >
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FFB200] font-dangsik">
             {title}
           </div>
         </div>

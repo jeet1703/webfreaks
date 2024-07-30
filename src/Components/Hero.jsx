@@ -19,27 +19,21 @@ function Hero() {
         ></div>
 
         {/* Two-Column Layout */}
-        <div className="relative z-20 grid grid-cols-1 md:grid-cols-3  mx-2 md:ms-28 md:mb-14 px-4 md:px-0">
+        <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 mx-2 md:ms-28 md:mb-14 px-4 md:px-0">
           {/* Text Content */}
           <div className="md:col-span-1 flex flex-col items-start justify-center space-y-6 p-4 md:py-10 font-nunito mt-28 md:mt-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 font-quicksand">
               Welcome Mortal,
             </h1>
-            <p className="text-xl md:text-xl mb-8 font-thin ">
-              We are on a mission <br />
-              Click on the spaceship to find out.
+            <p className="text-xl md:text-2xl mb-8 font-thin">
+              We are on a mission. Click on the spaceship to find out.
             </p>
-            <p className="text-xl md:text-base mb-8 font-thin">
-              At Wozco, we are constantly researching our <br /> ass off to find
-              new ways to survive on this <br /> planet and find yourself. We
-              would love to <br /> have you on our side in the spaceship and{" "}
-              <br />
-              enter a new world where there is just a bit less <br /> confusion.
+            <p className="text-xl md:text-xl mb-8 font-thin">
+              At Wozco, we are constantly researching our ass off to find new ways to survive on this planet and find yourself. We would love to have you on our side in the spaceship and enter a new world where there is just a bit less confusion.
             </p>
             <div className="flex space-x-4 z-30">
               <button className="border border-white text-white hover:bg-yellow-400 hover:text-black font-bold py-2 px-6 rounded-md flex items-center space-x-2">
                 <span>Know More</span>
-                
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-4 h-4" />
               </button>
               <button className="text-white hover:text-yellow-400 font-bold py-2 px-6 rounded-full flex items-center space-x-2">
@@ -82,9 +76,9 @@ function Hero() {
       {/* New Section */}
       <section className="relative text-white flex items-end justify-center font-quicksand py-10 md:py-0 bg-[#1C55D7]">
         {/* Text Content */}
-        <div className="relative justify-center items-end text-center md:text-left  md:p-20 md:ms-36 z-30">
+        <div className="relative justify-center items-end text-center md:text-left md:p-20 md:ms-36 z-30">
           <h2 className="items-center text-2xl md:text-6xl md:my-5 font-bold text-yellow-400 z-30">
-            But wait a minute <br /> who are{" "}
+            But wait a minute, who are{" "}
             <span className="text-white z-30">you?</span>
           </h2>
         </div>
