@@ -10,6 +10,9 @@ import Timer from './Components/Timer'
 import Person from './Components/Person'
 import About from './Components/About'
 import Proposition from './Components/Proposition'
+import Triangle from './Components/Triangle'
+import FunSection from './Components/Funsection'
+import Space from './Components/Space'
 
 function App() {
   
@@ -21,12 +24,15 @@ function App() {
     <Navbar/>
     <Hero/>
     <About/>
+    <Triangle/>
     <Div/>
+    
+    
     <Proposition/>
     <Stairs/>
+    <Space/>
     <Timer/>
-    <Zoosection/>
-    <Person/>
+    <FunSection/>
     <Footer/>
 
     </>

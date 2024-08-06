@@ -19,6 +19,7 @@ const Div = () => {
         </div>
         <img src="./person.png" alt="person" className="w-24 h-24 md:w-48 md:h-48  " />
       </div>
+      <div className="bg-[#F31EB1] h-3 md:h-5 w-full absolute left-0 bottom-0"></div>
     </div>
   );
 };

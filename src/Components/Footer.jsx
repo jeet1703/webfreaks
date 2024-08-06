@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-purple-700 text-white py-10">
+    <footer className="bg-purple-700 text-white py-10"> 
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 mx-8">
           <h2 className="text-lg md:text-2xl font-bold text-yellow-400 mb-4 md:mb-0 font-dangsik">
@@ -28,7 +28,7 @@ function Footer() {
         </div>
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-3 md:mx-8">
           {/* Left Column: Logo and Description */}
           <div className="flex flex-col">
             <div className="mb-4">

@@ -1,12 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import "../index.css"; // Ensure this path is correct
 
 function Hero() {
   return (
     <>
-      <section className="relative text-white flex items-center justify-center font-quicksand">
+      <section className="relative text-white flex flex-col items-center justify-center font-quicksand">
         {/* Starry Background Overlay */}
         <div
           className="absolute inset-0 z-0"
@@ -19,53 +17,24 @@ function Hero() {
         ></div>
 
         {/* Two-Column Layout */}
-        <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 mx-2 md:ms-28 md:mb-14 px-4 md:px-0">
+        <div className="relative z-20 grid grid-cols-1 md:grid-cols-4 mx-2 md:ms-28 md:mb-8 px-4 md:px-0">
           {/* Text Content */}
           <div className="md:col-span-1 flex flex-col items-start justify-center space-y-6 p-4 md:py-10 font-nunito mt-28 md:mt-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 font-quicksand">
-              Welcome Mortal,
+            <h1 className="text-4xl md:text-4xl font-extrabold font-dangsik">
+              get in, Loser
             </h1>
-            <p className="text-xl md:text-2xl mb-8 font-thin">
-              We are on a mission. Click on the spaceship to find out.
-            </p>
             <p className="text-xl md:text-xl mb-8 font-thin">
-              At Wozco, we are constantly researching our ass off to find new ways to survive on this planet and find yourself. We would love to have you on our side in the spaceship and enter a new world where there is just a bit less confusion.
+              we are wozoo. we handle fun in your area.
             </p>
-            <div className="flex space-x-4 z-30">
-              <button className="border border-white text-white hover:bg-yellow-400 hover:text-black font-bold py-2 px-6 rounded-md flex items-center space-x-2">
-                <span>Know More</span>
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-4 h-4" />
-              </button>
-              <button className="text-white hover:text-yellow-400 font-bold py-2 px-6 rounded-full flex items-center space-x-2">
-                <span>Jump In</span>
-                <div className="flex flex-col items-center ">
-                  <img
-                    src="/right.svg"
-                    alt="Arrow"
-                    className="w-4 h-4 mb-[-1px]"
-                  />
-                  <img
-                    src="/right.svg"
-                    alt="Arrow"
-                    className="w-4 h-4 mb-[-1px]"
-                  />
-                  <img
-                    src="/right.svg"
-                    alt="Arrow"
-                    className="w-4 h-4 mb-[-1px]"
-                  />
-                </div>
-              </button>
-            </div>
           </div>
 
           {/* Eclipse Image */}
-          <div className="md:col-span-2 flex items-center justify-center relative mb-32 md:mb-0">
-            <div className="relative w-full h-full">
+          <div className="md:col-span-3 flex items-center justify-end relative mb-32 md:mb-0">
+            <div className="relative w-full max-w-full md:w-[60em]">
               <img
                 src="/eclipse.png"
                 alt="Astronaut"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
                 style={{ mixBlendMode: "multiply" }}
               />
             </div>
@@ -73,24 +42,40 @@ function Hero() {
         </div>
       </section>
 
-      {/* New Section */}
-      <section className="relative text-white flex items-end justify-center font-quicksand py-10 md:py-0 bg-[#1C55D7]">
+      {/* New Section with Continuous Background */}
+      <section className="relative text-white flex items-end justify-center font-quicksand py-10 md:py-0 md:-mt-48">
+        {/* Starry Background Overlay */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(/Rectangles.png)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
+
         {/* Text Content */}
-        <div className="relative justify-center items-end text-center md:text-left md:p-20 md:ms-36 z-30">
-          <h2 className="items-center text-2xl md:text-6xl md:my-5 font-bold text-yellow-400 z-30">
+        <div className="relative w-full flex flex-col items-end text-center md:text-right md:p-20 z-30">
+          <h2 className="text-2xl md:text-6xl md:my-3 font-bold text-yellow-400 z-30">
             But wait a minute, who are{" "}
             <span className="text-white z-30">you?</span>
           </h2>
+          <div className="flex w-full justify-center md:me-40 items-end mt-4">
+            <button className="bg-[#D9D9D9] hover:bg-gray-200 text-black px-10 font-bold py-2 rounded-sm z-30">
+              Join Wozoo
+            </button>
+          </div>
         </div>
 
         {/* Foreground Image */}
         <img
-          src="kidmin.svg"
+          src="/kidmin.svg"
           alt="Kid"
-          className="block md:max-w-3xl z-20 absolute bottom-0 left-1/2 transform -translate-x-1/2 md:left-10 md:translate-x-0 md:mt-10"
+          className="block md:max-w-3xl z-20 absolute bottom-0 left-1/2 transform -translate-x-1/2 md:left-8 md:translate-x-0 md:mt-10"
         />
 
-        <div className="absolute bottom-0 w-full h-4 bg-[#F31EB1] z-10"></div>
+        <div className="absolute bottom-0 w-full h-4 bg-[#641CF8] z-20"></div>
       </section>
     </>
   );
