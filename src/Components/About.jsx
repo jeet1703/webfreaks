@@ -23,7 +23,7 @@ const WoozosSection = () => {
             />
           </div>
         </div>
-        <div className="bg-yellow-500 h-10 md:h-20 w-full absolute left-0 bottom-0"></div>
+        <div className="bg-[#FFCB00] h-10 md:h-20 w-full absolute left-0 bottom-0"></div>
       </div>
 
       {/* Dots SVG - Left Center */}
@@ -40,6 +40,14 @@ const WoozosSection = () => {
         alt="Dots"
         className="absolute rotate-180 right-4 md:right-4 w-20 md:w-auto top-0 z-10"
         style={{ marginRight: '-1rem' }} // Adjust margin to ensure it touches the extreme right
+      />
+
+      {/* Cloud SVG - Bottom Left */}
+      <img
+        src="/cloud.svg"
+        alt="Cloud"
+        className="absolute left-20 bottom-0  w-40 md:w-48"
+        style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
       />
     </div>
   );
