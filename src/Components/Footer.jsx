@@ -19,7 +19,7 @@ function Footer() {
             <input
               type="email"
               placeholder="wozco@gmail.com"
-              className="px-4 py-2 text-purple-900 rounded-full focus:outline-none"
+              className=" md:px-4 px-1 py-2 text-purple-900 rounded-full focus:outline-none"
             />
             <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full">
               Subscribe

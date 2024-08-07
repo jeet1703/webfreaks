@@ -46,7 +46,7 @@ const WoozosSection = () => {
       <img
         src="/cloud.svg"
         alt="Cloud"
-        className="absolute left-20 bottom-0  w-40 md:w-48"
+        className="absolute md:left-20 bottom-0 -mb-20 z-30  w-40 md:w-[14em]"
         style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
       />
     </div>

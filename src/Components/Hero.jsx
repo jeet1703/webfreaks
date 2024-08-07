@@ -57,9 +57,9 @@ function Hero() {
 
         {/* Text Content */}
         <div className="relative w-full flex flex-col items-end text-center md:text-right md:p-20 z-30">
-          <h2 className="text-2xl md:text-6xl md:my-3 font-bold text-yellow-400 z-30">
+          <h2 className="text-2xl md:text-6xl md:my-3 font-bold text-white z-30">
             But wait a minute, who are{" "}
-            <span className="text-white z-30">you?</span>
+            <span className="text-[#F7CC00] font-bold  z-30">YOU?</span>
           </h2>
           <div className="flex w-full justify-center md:me-40 items-end mt-4">
             <button className="bg-[#D9D9D9] hover:bg-gray-200 text-black px-10 font-bold py-2 rounded-sm z-30">
