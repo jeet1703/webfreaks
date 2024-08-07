@@ -19,7 +19,7 @@ function App() {
     // Simulate a loading process
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the timeout as needed
+    }, 3000); // Adjust the timeout as needed
 
     return () => clearTimeout(timer);
   }, []);
