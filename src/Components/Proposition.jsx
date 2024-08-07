@@ -6,7 +6,7 @@ import "../index.css"; // Ensure this path is correct
 
 function CarouselSection() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -14,11 +14,12 @@ function CarouselSection() {
     autoplay: true,
     autoplaySpeed: 3000,
     adaptiveHeight: true,
+    arrows: false,
   };
 
   return (
-    <section className="relative w-full h-screen">
-      <Slider {...settings} className="w-full h-full">
+    <section className="relative w-full h-64 sm:h-72 md:h-full ">
+      <Slider {...settings}>
         <div className="w-full h-full">
           <img
             src="comicbackground.png" // Replace with the correct path

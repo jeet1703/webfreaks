@@ -30,13 +30,13 @@ function Timer() {
       <img
         src="/timerbg.svg"
         alt="Timer Background"
-        className="absolute z-10 w-full bottom-0 md:top-0.5 mix-blend-screen"
+        className="absolute z-10 w-full top-1/2 md:top-0.5 mix-blend-screen"
       />
       <div className="relative z-20 flex flex-col items-center md:mt-10">
         <div className="text-center text-white text-3xl mb-16 md:text-4xl font-quicksand">
           App Launches In
         </div>
-        <div className="flex flex-wrap justify-center gap-4 font-protest font-bold">
+        <div className="grid grid-cols-4 gap-4 font-protest font-bold">
           <Card time={timeLeft.days} title="DAYS" />
           <Card time={timeLeft.hours} title="HOURS" />
           <Card time={timeLeft.minutes} title="MINS" />
@@ -49,7 +49,7 @@ function Timer() {
 
 function Card({ time, title }) {
   return (
-    <div className="relative w-20 sm:w-24 md:w-44 lg:w-52 overflow-hidden">
+    <div className="relative w-full max-w-[80px] sm:max-w-[100px] md:max-w-[180px] lg:max-w-[200px] overflow-hidden">
       <img
         src="startsm.svg"
         alt=""
