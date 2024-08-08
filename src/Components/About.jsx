@@ -8,7 +8,7 @@ const WoozosSection = () => {
           {/* Left Column - Text */}
           <div className="md:w-1/2 flex flex-col items-center justify-center font-nunito">
             <div className="text-center md:text-left md:max-w-lg">
-              <p className="text-3xl font-bold text-black md:mx-14 mt-20 md:mt-0">
+              <p className="text-3xl md:text-4xl font-bold text-black md:mx-14 mt-20 md:mt-0 font-quicksand">
                 We may not be the <span className="text-purple-600">illuminati</span>, but we still have three sides to us.
               </p>
             </div>
@@ -30,7 +30,7 @@ const WoozosSection = () => {
       <img
         src="/dots.svg"
         alt="Dots"
-        className="absolute left-0 top-1/2 transform w-20 md:w-auto -translate-y-1/2 z-10"
+        className="absolute left-0 top-1/2 transform w-20 lg:w-auto -translate-y-1/2 z-10"
         style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
       />
 
@@ -38,7 +38,7 @@ const WoozosSection = () => {
       <img
         src="/dots.svg"
         alt="Dots"
-        className="absolute rotate-180 right-4 md:right-4 w-20 md:w-auto top-0 z-10"
+        className="absolute rotate-180 right-4 lg:right-4 w-20 lg:w-auto top-0 z-10"
         style={{ marginRight: '-1rem' }} // Adjust margin to ensure it touches the extreme right
       />
 

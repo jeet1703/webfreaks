@@ -43,7 +43,7 @@ function Hero() {
       </section>
 
       {/* New Section with Continuous Background */}
-      <section className="relative text-white flex items-end justify-center font-quicksand py-10 md:py-0 md:-mt-48">
+      <section className="relative text-white flex items-end justify-center font-quicksand py-10 md:py-0 md:-mt-46">
         {/* Starry Background Overlay */}
         <div
           className="absolute inset-0 z-0"
@@ -57,12 +57,12 @@ function Hero() {
 
         {/* Text Content */}
         <div className="relative w-full flex flex-col items-end text-center md:text-right md:p-20 z-30">
-          <h2 className="text-2xl md:text-6xl md:my-3 font-bold text-white z-30">
+          <h2 className="text-xl mx-1 md:mx-0 lg:text-5xl md:my-3 font-bold font-dangsik text-white z-30">
             But wait a minute, who are{" "}
-            <span className="text-[#F7CC00] font-bold  z-30">YOU?</span>
+            <span className="text-[#F7CC00] font-bold md:text-6xl  z-30">YOU?</span>
           </h2>
-          <div className="flex w-full justify-center md:me-40 items-end mt-4">
-            <button className="bg-[#D9D9D9] hover:bg-gray-200 text-black px-10 font-bold py-2 rounded-sm z-30">
+          <div className="flex w-full justify-center  lg:me-40 items-end mt-4">
+            <button className="bg-[#D9D9D9] hover:bg-[#F7CC00] transition-all  text-black px-10 font-bold py-2 rounded-sm z-30">
               Join Wozoo
             </button>
           </div>
@@ -72,7 +72,7 @@ function Hero() {
         <img
           src="/kidmin.svg"
           alt="Kid"
-          className="block md:max-w-3xl z-20 absolute bottom-0 left-1/2 transform -translate-x-1/2 md:left-8 md:translate-x-0 md:mt-10"
+          className="block md:max-w-3xl z-20 absolute bottom-0 -mb-8 md:-mb-12  left-1/2 transform -translate-x-1/2 md:left-0 md:translate-x-0 md:mt-10"
         />
 
         <div className="absolute bottom-0 w-full h-4 bg-[#641CF8] z-20"></div>

@@ -30,3 +30,34 @@
 .font-nunito {
   font-family: 'Nunito Sans', sans-serif;
 }
+
+@font-face {
+  font-family: 'Dangsik';
+  src: url('/src/assets/fonts/Dangsik.ttf') format('truetype'),
+       url('/src/assets/fonts/Dangsik.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dangsik Oblique';
+  src: url('/src/assets/fonts/Dangsik Oblique.ttf') format('truetype'),
+       url('/src/assets/fonts/Dangsik Oblique.otf') format('opentype');
+  font-weight: normal;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Dangsik Ink Trap';
+  src: url('/src/assets/fonts/Dangsik Ink Trap.ttf') format('truetype'),
+       url('/src/assets/fonts/Dangsik Ink Trap.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dangsik Ink Trap Oblique';
+  src: url('/src/assets/fonts/Dangsik Ink Trap Oblique.otf') format('opentype');
+  font-weight: normal;
+  font-style: oblique;
+}

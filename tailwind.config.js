@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        dangsik: ['Dangsik', 'sans-serif'],
+        dangsikOblique: ['Dangsik Oblique', 'sans-serif'],
+        dangsikInkTrap: ['Dangsik Ink Trap', 'sans-serif'],
+        dangsikInkTrapOblique: ['Dangsik Ink Trap Oblique', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

@@ -9,19 +9,19 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-purple-700 text-white py-10"> 
+    <footer className="bg-[#570FCC] text-white py-10 font-quicksand relative"> 
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 mx-8">
-          <h2 className="text-lg md:text-2xl font-bold text-yellow-400 mb-4 md:mb-0 font-dangsik">
+          <h2 className="text-lg md:text-2xl font-bold text-[#F7CC00] mb-4 md:mb-0 font-dangsik ">
             Join our newsletter to follow our news
           </h2>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-8">
             <input
               type="email"
               placeholder="wozco@gmail.com"
-              className=" md:px-4 px-1 py-2 text-purple-900 rounded-full focus:outline-none"
+              className=" md:px-8 m px-1 py-2 text-purple-900 rounded-xl focus:outline-none"
             />
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-xl">
               Subscribe
             </button>
           </div>
@@ -32,7 +32,7 @@ function Footer() {
           {/* Left Column: Logo and Description */}
           <div className="flex flex-col">
             <div className="mb-4">
-              <img src="/logo.png" alt="Wozco Logo" className="w-20" />
+              <img src="/logo.png" alt="Wozco Logo" className="w-44 md:my-4" />
             </div>
             <p className="text-white mb-4 md:me-20">
               Think of Wozco as that friend who’s always on the same wavelength
@@ -43,16 +43,16 @@ function Footer() {
               style.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-yellow-400">
+              <a href="#" className="text-[#F7CC00]">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="#" className="text-yellow-400">
+              <a href="#" className="text-[#F7CC00]">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
-              <a href="#" className="text-yellow-400">
+              <a href="#" className="text-[#F7CC00]">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="#" className="text-yellow-400">
+              <a href="#" className="text-[#F7CC00]">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
@@ -63,29 +63,29 @@ function Footer() {
             {/* Our Company Links */}
             <div>
               <h3 className="font-bold text-xl text-white mb-2">Our Company</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Press
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Partnerships
                   </a>
                 </li>
@@ -95,29 +95,29 @@ function Footer() {
             {/* Resources Links */}
             <div>
               <h3 className="font-bold text-xl text-white mb-2">Resources</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     List with Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Advertise with Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     FAQs
                   </a>
                 </li>
@@ -127,29 +127,29 @@ function Footer() {
             {/* Connect with Us Links */}
             <div>
               <h3 className="font-bold text-xl text-white mb-2">Connect with Us</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Social Media
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Newsletter
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Help Center
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-400 text-white">
+                  <a href="#" className="hover:text-[#F7CC00] text-white">
                     Community
                   </a>
                 </li>
@@ -159,12 +159,13 @@ function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="text-center mt-8 text-white">
-          <p>
+        <div className="w-full absolute bottom-0 left-0  bg-[#410B99] py-1">
+          <p className="text-center text-white">
             All Copyrights are reserved by Wozco Entertainment Private Limited ©
           </p>
         </div>
       </div>
+      
     </footer>
   );
 }
