@@ -55,8 +55,8 @@
           alt={`${title} Background`}
           className="absolute inset-0 w-full h-full z-0 "
         />
-        <div className="relative z-10 flex flex-col items-center justify-center bg-transparent p-2 md:p-10 text-center h-full">
-          <div className="flex flex-col items-center md:gap-3">
+        <div className="relative z-10 flex flex-col items-center justify-center bg-transparent p-2 lg:p-10 text-center h-full">
+          <div className="flex flex-col items-center lg:gap-3">
             <div className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white font-dangsik">
               {time}
             </div>

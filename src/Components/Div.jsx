@@ -17,7 +17,7 @@ const Div = () => {
           <h1 className="text-lg text-gray-200 md:text-4xl font-thin ">You really dive deep, huh!</h1>
           <p className="text-2xl md:text-4xl font-semibold">Guess what, we love it too</p>
         </div>
-        <img src="./person.png" alt="person" className="w-24 md:-mt-20 h-24 md:w-52 md:h-52  " />
+        <img src="./person.png" alt="person" className="w-24 md:-mt-[60px] h-24 md:w-52 md:h-52 z-40  " />
       </div>
       <div className="bg-[#F31EB1] h-3 md:h-6 w-full absolute left-0 bottom-0"></div>
     </div>

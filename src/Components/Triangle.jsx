@@ -10,6 +10,7 @@ const TriangularSection = () => {
       <div className="relative flex justify-center items-center">
         <img src="triangle.png" alt="Triangle" className="w-full max-w-2xl md:max-w-6xl py-20" />
       </div>
+      
     </div>
   );
 };
