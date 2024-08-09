@@ -78,7 +78,7 @@ function Hero() {
   <img
     src="/kidmin.svg"
     alt="Kid"
-    className="block md:max-w-2xl z-20 absolute bottom-0 -mb-8 md:-mb-12 left-1/2 transform -translate-x-1/2 md:left-0 md:translate-x-0 md:mt-10"
+    className="block md:max-w-xl z-20 absolute bottom-0 mx-10 -mb-8 md:-mb-12 left-1/2 transform -translate-x-1/2 md:left-0 md:translate-x-0 md:mt-10"
   />
 
   <div className="absolute bottom-0 -mb-2 w-full h-4 bg-[#641CF8] z-20"></div>
