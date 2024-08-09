@@ -59,7 +59,7 @@ function Footer() {
           </div>
 
           {/* Right Column: Links */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
             {/* Our Company Links */}
             <div>
               <h3 className="font-bold text-xl text-white mb-2">Our Company</h3>

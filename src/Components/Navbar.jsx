@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50">
-      <div className="hidden md:block absolute  inset-0  bg-cover bg-transparent bg-center bg-opacity-10 opacity-80" style={{ backgroundImage: 'url("/subtlegrad.png")'  }}></div>
+      <div className="hidden md:block absolute  inset-0 w-auto  bg-cover bg-transparent bg-center bg-opacity-10 opacity-80" style={{ backgroundImage: 'url("/subtlegrad.png")'  }}></div>
       <div className="relative bg-opacity-20">
         <div className="flex items-center justify-between p-7 px-30 max-w-6xl mx-auto">
           {/* Logo */}
@@ -30,7 +30,7 @@ const Navbar = () => {
               <a
                 key={item.id}
                 href={item.url}
-                className="text-white hover:text-yellow-500 transition-colors"
+                className="text-white hover:text-[#F7CC00] transition-colors"
               >
                 {item.title}
               </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 <a
                   key={item.id}
                   href={item.url}
-                  className="text-white text-lg hover:text-yellow-500 transition-colors"
+                  className="text-white text-lg hover:text-[#F7CC00] transition-colors"
                   onClick={toggleNavigation} // Close menu on link click
                 >
                   {item.title}

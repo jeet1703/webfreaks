@@ -19,18 +19,18 @@ const WoozosSection = () => {
             <img
               src="person3.png" // Ensure this path is correct
               alt="Kid"
-              className="w-auto h-full md:max-w-full md:max-h-full md:-mt-[10em]"
+              className="w-auto h-full md:max-w-full md:max-h-full md:-mb-10 md:-mt-[10em]"
             />
           </div>
         </div>
-        <div className="bg-[#FFCB00] h-10 md:h-20 w-full absolute left-0 bottom-0"></div>
+        <div className="bg-[#FFCB00] h-10 md:h-20 w-full  max-w-screen-3xl   absolute left-0 bottom-0"></div>
       </div>
 
       {/* Dots SVG - Left Center */}
       <img
         src="/dots.svg"
         alt="Dots"
-        className="absolute left-0 top-1/2 transform w-20 lg:w-auto -translate-y-1/2 z-10"
+        className="absolute left-0 top-1/2 transform w-20 md:w-40 lg:w-auto -translate-y-1/2 z-10"
         style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
       />
 
