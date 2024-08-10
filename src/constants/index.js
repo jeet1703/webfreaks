@@ -1,39 +1,5 @@
-export const navigation = [
-    {
-      id: "0",
-      title: "Home",
-      url: "#",
-    },
-    {
-      id: "1",
-      title: "About",
-      url: "#About",
-    },
-    {
-      id: "2",
-      title: "Gallery",
-      url: "#Gallery",
-    },
-    {
-      id: "3",
-      title: "Testimonials",
-      url: "#Test",
-    },
-    {
-      id: "4",
-      title: "Events",
-      url: "#Events",
-    },
-    {
-      id: "5",
-      title: "Newsletter",
-      url: "#Newsletter",
-    },
-    {
-      id: "6",
-      title: "Contact Us",
-      url: "#Contact",
-      onlyMobile: true,
-    },
-   
-  ];
+export const navigationLinks = [
+  { id: 1, title: "Wozoo World", url: "#home" },
+  { id: 2, title: "Products", url: "#products" },
+  { id: 3, title: "About Us", url: "#about-us" },
+];

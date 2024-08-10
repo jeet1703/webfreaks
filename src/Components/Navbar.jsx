@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { navigationLinks } from "../constants";
 
 // This is a simplified Navbar component
 const Navbar = () => {
@@ -8,11 +9,7 @@ const Navbar = () => {
     setOpenNavigation((prev) => !prev);
   };
 
-  const navigationLinks = [
-    { id: 1, title: "Wozoo World", url: "#home" },
-    { id: 2, title: "Products", url: "#products" },
-    { id: 3, title: "About Us", url: "#about-us" },
-  ];
+  
 
   return (
     <div className="fixed top-0 left-0 w-full z-50">
@@ -30,7 +27,7 @@ const Navbar = () => {
               <a
                 key={item.id}
                 href={item.url}
-                className="text-white hover:text-[#F7CC00] transition-colors"
+                className="text-white hover:text-[#F7CC00] font-quicksand transition-colors"
               >
                 {item.title}
               </a>

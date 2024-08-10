@@ -17,7 +17,7 @@ const Div = () => {
           <h1 className="text-lg text-gray-200 md:text-4xl font-thin">
             You really dive deep, huh!
           </h1>
-          <p className="text-2xl md:text-4xl font-semibold">Guess what, we love it too</p>
+          <p className="text-2xl md:text-4xl font-semibold">Guess what, we love it too {";)"} </p>
         </div>
       </div>
       <img 
