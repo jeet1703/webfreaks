@@ -36,7 +36,7 @@
           <div className="text-center text-white text-3xl mb-16 md:text-4xl font-quicksand">
             App Launches In
           </div>
-          <div className="grid grid-cols-4 gap-3 md:gap-0  font-protest font-bold">
+          <div className="grid grid-cols-4 gap-3 md:gap-10  font-protest font-bold">
             <Card time={timeLeft.days} title="DAYS" background="/box1.svg" />
             <Card time={timeLeft.hours} title="HOURS" background="/box2.svg" />
             <Card time={timeLeft.minutes} title="MINS" background="/box3.svg" />

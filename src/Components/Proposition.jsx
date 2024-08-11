@@ -22,7 +22,7 @@ function CarouselSection() {
       <Slider {...settings}>
         <div className="w-full h-full">
           <img
-            src="comicbackground.png" // Replace with the correct path
+            src="comicbackground.webp" // Replace with the correct path
             alt="Slide 1"
             className="w-full h-full object-cover"
           />
@@ -30,7 +30,7 @@ function CarouselSection() {
         {/* Add more slides as needed */}
         <div className="w-full h-full">
           <img
-            src="comicbackground2.png"
+            src="comicbackground2.webp"
             alt="Slide 2"
             className="w-full h-full object-cover"
           />
