@@ -29,7 +29,7 @@ const WoozosSection = () => {
 
       {/* Dots SVG - Left Center */}
       <img
-        src="/dotsleft.png"
+        src="/dotsleft.webp"
         alt="Dots"
         className="absolute left-0  top-1/2 transform w-20 md:w-40 lg:w-auto -translate-y-1/2 z-10"
         style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
@@ -38,7 +38,7 @@ const WoozosSection = () => {
 
       {/* Dots SVG - Right Top */}
       <img
-        src="/dots.png"
+        src="/dots.webp"
         alt="Dots"
         className="absolute  rotate-180 right-4 lg:right-4 w-20 lg:w-auto top-0 z-10"
         style={{ marginRight: '-1rem' }} // Adjust margin to ensure it touches the extreme right

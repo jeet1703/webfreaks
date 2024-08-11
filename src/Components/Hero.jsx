@@ -32,7 +32,7 @@ function Hero() {
           <div className="md:col-span-3 flex items-center justify-end relative mb-32 md:mb-0">
             <div className="relative w-full max-w-full md:w-[60em]">
               <img
-                src="/eclipse.png"
+                src="/eclipse.webp"
                 alt="Astronaut"
                 className="w-full h-auto object-cover"
                 style={{ mixBlendMode: "multiply" }}
