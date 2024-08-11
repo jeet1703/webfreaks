@@ -20,6 +20,7 @@ const WoozosSection = () => {
               src="person3.png" // Ensure this path is correct
               alt="Kid"
               className="w-full h-full md:max-w-full md:max-h-full md:-mb-16 md:-mt-[10.5em]"
+              loading="eager"
             />
           </div>
         </div>
@@ -32,6 +33,7 @@ const WoozosSection = () => {
         alt="Dots"
         className="absolute left-0  top-1/2 transform w-20 md:w-40 lg:w-auto -translate-y-1/2 z-10"
         style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
+        loading="eager"
       />
 
       {/* Dots SVG - Right Top */}
@@ -40,6 +42,7 @@ const WoozosSection = () => {
         alt="Dots"
         className="absolute  rotate-180 right-4 lg:right-4 w-20 lg:w-auto top-0 z-10"
         style={{ marginRight: '-1rem' }} // Adjust margin to ensure it touches the extreme right
+        loading="eager"
       />
 
       {/* Cloud SVG - Bottom Left */}
@@ -48,6 +51,7 @@ const WoozosSection = () => {
         alt="Cloud"
         className="absolute md:left-20 bottom-0 -mb-20 z-20 w-40 md:w-[16em]"
         style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
+        loading="eager"
       />
     </div>
   );

@@ -25,6 +25,7 @@ const Div = () => {
         alt="person" 
         className="w-48 h-48 md:w-56 md:h-56 absolute bottom-0 md:right-[20em] md:-bottom-3 lg:bottom-0 z-10"
         style={{ zIndex: 10 }}
+        loading="eager"
       />
       <div className="bg-[#F31EB1] h-3 md:h-5 w-full absolute left-0 bottom-0"></div>
     </div>

@@ -36,6 +36,7 @@ function Hero() {
                 alt="Astronaut"
                 className="w-full h-auto object-cover"
                 style={{ mixBlendMode: "multiply" }}
+                loading="eager" 
               />
             </div>
           </div>
