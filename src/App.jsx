@@ -16,12 +16,35 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading process
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000); // Adjust the timeout as needed
+    const images = document.querySelectorAll('img');
+    let loadedCount = 0;
 
-    return () => clearTimeout(timer);
+    const handleImageLoad = () => {
+      loadedCount += 1;
+      if (loadedCount === images.length) {
+        setLoading(false);
+      }
+    };
+
+    if (images.length === 0) {
+      setLoading(false); // No images, no need to load
+    } else {
+      images.forEach((image) => {
+        if (image.complete) {
+          handleImageLoad();
+        } else {
+          image.addEventListener('load', handleImageLoad);
+          image.addEventListener('error', handleImageLoad);
+        }
+      });
+    }
+
+    return () => {
+      images.forEach((image) => {
+        image.removeEventListener('load', handleImageLoad);
+        image.removeEventListener('error', handleImageLoad);
+      });
+    };
   }, []);
 
   return (
@@ -29,7 +52,7 @@ function App() {
       {loading ? (
         <div className="loader">
           {/* Customize the loader as per your requirements */}
-          <div className="spinner"></div>
+          <div className="spinner">Loading...</div>
         </div>
       ) : (
         <>
