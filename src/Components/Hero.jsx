@@ -23,7 +23,7 @@ function Hero() {
             <h1 className="text-4xl md:text-4xl font-extrabold font-dangsik">
               get in, Loser
             </h1>
-            <p className="text-xl md:text-xl mb-8 font-thin">
+            <p className="text-xl  md:text-xl font-quicksand">
               we are wozoo. we handle fun in your area.
             </p>
           </div>
@@ -70,7 +70,7 @@ function Hero() {
               </span>
             </h2>
             <div className="flex w-full justify-center md:justify-start items-end mt-4">
-              <button className="bg-[#D9D9D9] hover:bg-[#F7CC00] transition-all text-black px-10 font-bold py-2 rounded-sm z-30 md:mb-14">
+              <button className="bg-[#D9D9D9] hover:bg-[#F7CC00] transition-all text-black px-10 font-bold py-2 rounded-md z-30 md:mb-14">
                 Join Wozoo
               </button>
             </div>
