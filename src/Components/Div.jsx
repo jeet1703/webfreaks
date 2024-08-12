@@ -12,9 +12,9 @@ const Div = () => {
       }}
       className="relative text-white md:p-10 flex justify-center md:justify-between items-end md:items-center overflow-hidden"
     >
-      <div className="relative flex flex-col md:flex-row justify-center items-center z-30 mx-auto w-full md:w-auto">
-        <div className="text-center font-nunito mb-10 md:mb-4 md:mr-10">
-          <h1 className="text-lg text-gray-200 md:text-4xl font-thin">
+      <div className=" flex flex-col md:flex-row justify-center items-center z-30 mx-auto md:mx-[35%] lg:mx-[30%] w-full md:w-auto">
+        <div className="text-center font-nunito mb-10 md:mb-4 px-10 "> {/* Adjusted margin to move text left on md and larger devices */}
+          <h1 className=" text-lg text-gray-200 md:text-4xl font-thin ">
             You really dive deep, huh!
           </h1>
           <p className="text-2xl md:text-4xl font-semibold">Guess what, we love it too {";)"} </p>
