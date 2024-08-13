@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
@@ -11,6 +12,9 @@ import Proposition from './Components/Proposition';
 import Triangle from './Components/Triangle';
 import FunSection from './Components/Funsection';
 import Space from './Components/Space';
+import Laughhome from './Components/Laughhome';
+import Bored from './Components/Bored';
+import HandSection from './Components/HandSection';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -48,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       {loading ? (
         <div className="loader">
           {/* Customize the loader as per your requirements */}
@@ -57,19 +61,43 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <Hero />
-          <About />
-          <Triangle />
-          <Div />
-          <Proposition />
-          <Stairs />
-          <Space />
-          <Timer />
-          <FunSection />
-          <Footer />
+          <Routes>
+            {/* Section 1 Route */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <About />
+                  <Triangle />
+                  <Div />
+                  <Proposition />
+                  <Stairs />
+                  <Space />
+                  <Timer />
+                  <FunSection />
+                  <Footer />
+                </>
+              }
+            />
+
+            {/* Section 2 Route */}
+            <Route
+              path="/about-us"
+              element={
+                <>
+                  <Laughhome />
+                  <Bored />
+                  <Timer />
+                  <HandSection />
+                  <Footer />
+                </>
+              }
+            />
+          </Routes>
         </>
       )}
-    </>
+    </Router>
   );
 }
 

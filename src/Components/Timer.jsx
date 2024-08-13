@@ -29,6 +29,7 @@
       <div className="relative flex flex-col items-center px-4 py-6 bg-black">
         <img
           src="/timerbg.svg"
+          loading="eager"
           alt="Timer Background"
           className="absolute z-10 w-full top-28 md:top-0.5 mix-blend-screen"
         />
@@ -53,6 +54,7 @@
         <img
           src={background}
           alt={`${title} Background`}
+          loading="eager"
           className="absolute inset-0 w-full h-full z-0 "
         />
         <div className="relative z-10 flex flex-col items-center justify-center bg-transparent p-2 lg:p-10 text-center h-full">

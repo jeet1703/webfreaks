@@ -22,6 +22,7 @@ function SpaceGraph() {
           <img
             src="/graph.png"
             alt="Graph"
+            loading="eager"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -31,6 +32,7 @@ function SpaceGraph() {
           <img
             src="/space.png"
             alt="Space"
+            loading="eager"
             className="w-full h-auto object-cover"
           />
         </div>

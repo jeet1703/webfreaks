@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { navigationLinks } from "../constants";
 
 // This is a simplified Navbar component
@@ -9,28 +10,26 @@ const Navbar = () => {
     setOpenNavigation((prev) => !prev);
   };
 
-  
-
   return (
     <div className="fixed top-0 left-0 w-full z-50">
-      <div className="hidden md:block absolute  inset-0 w-auto  bg-cover bg-transparent bg-center bg-opacity-10 opacity-80" style={{ backgroundImage: 'url("/subtlegrad.png")'  }}></div>
+      <div className="hidden md:block absolute inset-0 w-auto bg-cover bg-transparent bg-center bg-opacity-10 opacity-80" style={{ backgroundImage: 'url("/subtlegrad.png")' }}></div>
       <div className="relative bg-opacity-20">
         <div className="flex items-center justify-between p-7 px-30 max-w-6xl mx-auto">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="logo.png" alt="Wozoo Logo" className="h-8 w-auto" />
+            <img src="logo.png" loading="eager" alt="Wozoo Logo" className="h-8 w-auto" />
           </div>
 
           {/* Navigation Links */}
           <nav className="hidden md:flex md:ml-auto md:mr-20 space-x-48">
             {navigationLinks.map((item) => (
-              <a
+              <Link
                 key={item.id}
-                href={item.url}
+                to={item.url}
                 className="text-white hover:text-[#F7CC00] font-quicksand transition-colors"
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -61,14 +60,14 @@ const Navbar = () => {
           <div className="md:hidden bg-black bg-opacity-90">
             <nav className="flex flex-col items-center space-y-4 gap-10 py-4">
               {navigationLinks.map((item) => (
-                <a
+                <Link
                   key={item.id}
-                  href={item.url}
+                  to={item.url}
                   className="text-white text-lg hover:text-[#F7CC00] transition-colors"
                   onClick={toggleNavigation} // Close menu on link click
                 >
                   {item.title}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>

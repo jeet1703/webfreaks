@@ -9,7 +9,7 @@ const Stairs = () => {
 
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src="./stairs.webp" alt="Stairs" className="w-full h-full object-cover" />
+        <img src="./stairs.webp" loading="eager" alt="Stairs" className="w-full h-full object-cover" />
       </div>
 
       {/* Main Content */}
