@@ -5,19 +5,20 @@
   
 }
 
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000; /* Adjust the background color as needed */
-    z-index: 9999;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-  
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s ease-in-out infinite;
+}
   .spinner {
     border: 8px solid #f3f3f3; /* Light grey */
     border-top: 8px solid #F7CC00; /* Blue */

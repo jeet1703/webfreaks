@@ -32,6 +32,7 @@ function Hero() {
                 className="w-full h-auto object-cover"
                 style={{ mixBlendMode: "multiply" }}
                 loading="eager" 
+                width={1000}
               />
             </div>
           </div>

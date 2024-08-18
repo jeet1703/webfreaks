@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Footer from './Components/Footer';
@@ -25,7 +25,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const images = document.querySelectorAll('img');
+    const images = Array.from(document.querySelectorAll('img'));
     let loadedCount = 0;
 
     const handleImageLoad = () => {
@@ -36,7 +36,7 @@ function App() {
     };
 
     if (images.length === 0) {
-      setLoading(false); // No images, no need to load
+      setLoading(false);
     } else {
       images.forEach((image) => {
         if (image.complete) {
@@ -59,15 +59,13 @@ function App() {
   return (
     <Router>
       {loading ? (
-        <div className="loader">
-          {/* Customize the loader as per your requirements */}
-          <div className="spinner">Loading...</div>
+        <div className="flex justify-center items-center min-h-screen bg-white">
+          <div className="loader"></div>
         </div>
       ) : (
         <>
           <Navbar />
           <Routes>
-            {/* Section 1 Route */}
             <Route
               path="/"
               element={
@@ -85,39 +83,34 @@ function App() {
                 </>
               }
             />
-
-            {/* Section 2 Route */}
             <Route
               path="/about-us"
               element={
                 <>
                   <Laughhome />
                   <Bored />
-                  <ExploreGenres/>
+                  <ExploreGenres />
                   <Timer />
                   <HandSection />
                   <Footer />
                 </>
               }
             />
-             <Route
+            <Route
               path="/products"
               element={
                 <>
-                  
-                  <Villan/>
-                  <TrendingSection/>
-                  <ExploreGenres/>
-                  <FriendSection/>
-                  <PyramidSection/>
-                  
+                  <Villan />
+                  <TrendingSection />
+                  <ExploreGenres />
+                  <FriendSection />
+                  <PyramidSection />
                   <Timer />
                   <Footer />
                 </>
               }
             />
           </Routes>
-          
         </>
       )}
     </Router>
