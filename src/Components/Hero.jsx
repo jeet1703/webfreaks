@@ -4,13 +4,9 @@ import "../index.css"; // Ensure this path is correct
 function Hero() {
   return (
     <>
-      <section className="relative text-white flex flex-col items-center justify-center font-quicksand">
-        {/* Starry Background Overlay */}
-        <div
-          className="absolute starsection inset-0 z-0"
-          
-        ></div>
-
+      <section className="relative starsection text-white flex flex-col items-center justify-center font-quicksand">
+        
+        
         {/* Two-Column Layout */}
         <div className="relative z-20 grid grid-cols-1 md:grid-cols-4 mx-2 md:ms-28 md:mb-8 px-4 md:px-0">
           {/* Text Content */}
@@ -32,7 +28,6 @@ function Hero() {
                 className="w-full h-auto object-cover"
                 style={{ mixBlendMode: "multiply" }}
                 loading="eager" 
-                width={1000}
               />
             </div>
           </div>
@@ -40,11 +35,7 @@ function Hero() {
       </section>
 
       {/* New Section with Continuous Background */}
-      <section className="relative text-white flex items-center justify-center font-quicksand py-10 md:py-0 md:-mt-46">
-        {/* Starry Background Overlay */}
-        <div
-          className="absolute starsection inset-0 z-0"  
-        ></div>
+      <section className="relative text-white flex items-center justify-center font-quicksand py-10 md:py-0 md:-mt-46 starsection">
 
         {/* Two Column Layout */}
         <div className="relative w-full max-w-6xl mx-auto flex flex-col md:flex-row z-30">
