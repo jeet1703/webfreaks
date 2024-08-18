@@ -68,7 +68,7 @@ function Hero() {
 
         {/* Foreground Image */}
         <img
-          src="/kidmin.png"
+          src="/kidmin.webp"
           alt="Kid"
           className="block md:max-w-xl z-20 absolute bottom-0 -mb-8 md:-mb-12 left-1/2 transform -translate-x-1/2 md:left-0 md:translate-x-0 md:mt-10"
         />

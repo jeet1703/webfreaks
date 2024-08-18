@@ -32,7 +32,7 @@ function Footer() {
           {/* Left Column: Logo and Description */}
           <div className="flex flex-col">
             <div className="mb-4">
-              <img src="/logo.png" alt="Wozco Logo" className="w-44 md:my-4" />
+              <img src="/logo.webp" alt="Wozco Logo" className="w-44 md:my-4" />
             </div>
             <p className="text-white text-sm lg:text-md mb-4 md:me-20">
               Think of Wozco as that friend who’s always on the same wavelength
