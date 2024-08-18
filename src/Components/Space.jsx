@@ -6,13 +6,8 @@ function SpaceGraph() {
     <section className="relative flex flex-col items-center justify-center font-quicksand text-white py-10 md:py-0">
       {/* Background */}
       <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(/Rectangles.png)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="absolute starsection inset-0 z-0"
+       
       ></div>
 
       {/* Two-Column Layout */}

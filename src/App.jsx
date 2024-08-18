@@ -15,6 +15,11 @@ import Space from './Components/Space';
 import Laughhome from './Components/Laughhome';
 import Bored from './Components/Bored';
 import HandSection from './Components/HandSection';
+import Villan from './Components/Villan';
+import ExploreGenres from './Components/ExploreGenres';
+import FriendSection from './Components/FriendSection';
+import PyramidSection from './Components/PyramidSection';
+import TrendingSection from './Components/TrendingSection';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -88,13 +93,31 @@ function App() {
                 <>
                   <Laughhome />
                   <Bored />
+                  <ExploreGenres/>
                   <Timer />
                   <HandSection />
                   <Footer />
                 </>
               }
             />
+             <Route
+              path="/products"
+              element={
+                <>
+                  
+                  <Villan/>
+                  <TrendingSection/>
+                  <ExploreGenres/>
+                  <FriendSection/>
+                  <PyramidSection/>
+                  
+                  <Timer />
+                  <Footer />
+                </>
+              }
+            />
           </Routes>
+          
         </>
       )}
     </Router>

@@ -7,13 +7,8 @@ function Hero() {
       <section className="relative text-white flex flex-col items-center justify-center font-quicksand">
         {/* Starry Background Overlay */}
         <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(/Rectangles.png)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
+          className="absolute starsection inset-0 z-0"
+          
         ></div>
 
         {/* Two-Column Layout */}
@@ -47,13 +42,7 @@ function Hero() {
       <section className="relative text-white flex items-center justify-center font-quicksand py-10 md:py-0 md:-mt-46">
         {/* Starry Background Overlay */}
         <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(/Rectangles.png)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
+          className="absolute starsection inset-0 z-0"  
         ></div>
 
         {/* Two Column Layout */}

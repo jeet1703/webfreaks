@@ -4,13 +4,9 @@ const Div = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(/Rectangles.png)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
         minHeight: "25vh",
       }}
-      className="relative text-white md:p-10 flex justify-center md:justify-between items-end md:items-center overflow-hidden"
+      className="relative starsection text-white md:p-10 flex justify-center md:justify-between items-end md:items-center overflow-hidden"
     >
       <div className=" flex flex-col md:flex-row justify-center items-center z-30 mx-auto md:mx-[35%] lg:mx-[30%] w-full md:w-auto">
         <div className="text-center font-nunito mb-10 md:mb-4 px-10 "> {/* Adjusted margin to move text left on md and larger devices */}

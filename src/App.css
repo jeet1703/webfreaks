@@ -1,7 +1,8 @@
 .starsection{
   margin: 0;
   padding: 0;
-  background:url("../public/Rectangles.png")
+  background:url("/Rectangles.png")
+  
 }
 
 .loader {
