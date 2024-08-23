@@ -9,7 +9,9 @@ const WoozosSection = () => {
           <div className="md:w-1/2 flex flex-col items-center justify-center font-nunito w-full">
             <div className="text-center md:text-left md:max-w-lg w-full">
               <p className="text-4xl md:text-5xl font-bold text-black md:mx-14 mt-20 md:mt-0 font-quicksand">
-                We may not be the <span className="text-[#6D13FF]">illuminati</span>, but we still have three sides to us.
+                We may not be the{" "}
+                <span className="text-[#6D13FF]">illuminati</span>, but we
+                still have three sides to us.
               </p>
             </div>
           </div>
@@ -19,7 +21,7 @@ const WoozosSection = () => {
             <img
               src="person3.png" // Ensure this path is correct
               alt="Kid"
-              className="w-full h-full md:max-w-full md:max-h-full md:-mb-16 md:-mt-[10.5em]"
+              className="w-full h-full md:max-w-full md:max-h-full md:-mb-16 md:-mt-[10.5em] -mb-8" // Added -mb-6 for mobile
               loading="eager"
             />
           </div>
@@ -31,8 +33,8 @@ const WoozosSection = () => {
       <img
         src="/dotsleft.webp"
         alt="Dots"
-        className="absolute left-0  top-1/2 transform w-20 md:w-40 lg:w-auto -translate-y-1/2 z-10"
-        style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
+        className="absolute left-0 top-1/2 transform w-20 md:w-40 lg:w-auto -translate-y-1/2 z-10"
+        style={{ marginLeft: "-1rem" }} // Adjust margin to ensure it touches the extreme left
         loading="eager"
       />
 
@@ -40,8 +42,8 @@ const WoozosSection = () => {
       <img
         src="/dots.webp"
         alt="Dots"
-        className="absolute  rotate-180 right-4 lg:right-4 w-20 lg:w-auto top-0 z-10"
-        style={{ marginRight: '-1rem' }} // Adjust margin to ensure it touches the extreme right
+        className="absolute rotate-180 right-4 lg:right-4 w-20 lg:w-auto top-0 z-10"
+        style={{ marginRight: "-1rem" }} // Adjust margin to ensure it touches the extreme right
         loading="eager"
       />
 
@@ -50,7 +52,7 @@ const WoozosSection = () => {
         src="/cloud.svg"
         alt="Cloud"
         className="absolute md:left-20 bottom-0 -mb-20 z-20 w-40 md:w-[16em]"
-        style={{ marginLeft: '-1rem' }} // Adjust margin to ensure it touches the extreme left
+        style={{ marginLeft: "-1rem" }} // Adjust margin to ensure it touches the extreme left
         loading="eager"
       />
     </div>
