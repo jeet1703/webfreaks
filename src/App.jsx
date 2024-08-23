@@ -102,7 +102,6 @@ function App() {
                 <>
                   <Villan />
                   <TrendingSection />
-                  <ExploreGenres />
                   <FriendSection />
                   <PyramidSection />
                   <Timer />
