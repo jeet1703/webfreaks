@@ -39,7 +39,7 @@ function TrendingSection() {
   ];
 
   return (
-    <div className="starsection text-white  px-10 md:px-24 md:-mt-[10%] z-30 ">
+    <div className="starsection text-white  px-10 md:px-24 md:-mt-[6%] z-30 ">
       <div className="flex items-center mb-10">
         <img src="./bal.svg" alt="Explore Icon" className="w-auto z-30" />
         <h2 className="text-2xl md:text-4xl font-bold z-30">Trending</h2>
