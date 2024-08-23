@@ -39,13 +39,14 @@ function TrendingSection() {
   ];
 
   return (
-    <div className="starsection text-white py-10 px-14 md:-mt-[10%] z-30 ">
+    <div className="starsection text-white  px-10 md:px-24 md:-mt-[10%] z-30 ">
       <div className="flex items-center mb-10">
         <img src="./bal.svg" alt="Explore Icon" className="w-auto z-30" />
         <h2 className="text-2xl md:text-4xl font-bold z-30">Trending</h2>
       </div>
 
-      <div className=" mx-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
+      {/* Adjust the grid layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-10 md:gap-14  ">
         {events.map((event, index) => (
           <EventCard key={index} event={event} />
         ))}
@@ -56,13 +57,13 @@ function TrendingSection() {
 
 function EventCard({ event }) {
   return (
-    <div className="bg-black overflow-hidden shadow-lg relative flex flex-col items-center justify-between h-full">
+    <div className="bg-black overflow-hidden shadow-lg relative flex flex-col items-center justify-between h-full w-full">
       <img
         src={event.image}
         alt={event.title}
         className="w-full h-48 object-cover"
       />
-      <div className="p-4 flex flex-col items-center justify-center flex-grow">
+      <div className="p-4 flex flex-col items-center justify-center flex-grow w-full">
         <h3 className="text-xl font-bold mb-4 text-center">{event.title}</h3>
         <a
           href={event.link}

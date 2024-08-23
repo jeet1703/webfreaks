@@ -3,11 +3,11 @@ import "../App.css"; // Ensure this path is correct
 
 const Villan = () => {
   return (
-    <div className="relative starsection text-white flex flex-col md:flex-row items-center justify-between pt-24 px-10 md:px-15 lg:px-20 py-10 font-quicksand">
+    <div className="relative starsection text-white flex flex-col md:flex-row items-center justify-between pt-24 px-10 md:px-15 lg:px-20 py-10 font-quicksand overflow-hidden">
       {/* Left Side: Logo and Text */}
       <div className="flex flex-col items-start justify-center text-center md:text-left mb-10 md:mb-0">
-        <img src="./logofun.webp" alt="Logo" className="w-auto  md:max-w-lg lg:max-w-xl" />
-        <p className="text-lg md:text-xl mt-2 max-w-2xl ">
+        <img src="./logofun.webp" alt="Logo" className="w-auto md:max-w-lg lg:max-w-xl" />
+        <p className="text-lg md:text-xl mt-2 max-w-2xl">
           It's time you get your serotonin from real life, get your ass up and book yourself for shit ton of spontaneity on Wozoo Fun.
         </p>
         <div className="flex mt-10">
@@ -23,8 +23,8 @@ const Villan = () => {
       </div>
 
       {/* Right Side: Villain Image */}
-      <div className="flex items-center justify-center ">
-        <img src="./villan.webp" alt="Villain" className= " w-auto max-w-md md:max-w-xl md:-mb-[40%]" />
+      <div className="flex items-center justify-center w-full md:w-auto">
+        <img src="./villan.webp" alt="Villain" className="w-full max-w-xs md:max-w-xl md:-mb-[40%]" />
       </div>
     </div>
   );

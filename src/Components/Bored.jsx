@@ -11,9 +11,9 @@ const Bored = () => {
       </div>
 
       {/* Grid of Images */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-28 mx-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-28 mx-6 md:mx-10">
         <div className="flex flex-col items-center">
-          <img src="./image1.webp" alt="Activity 1" className="w-full h-auto rounded-lg" />
+          <img src="./image1.webp" alt="Activity 1" className="w-full  h-auto rounded-lg" />
           <p className="text-center text-lg md:text-2xl lg:text-3xl mt-8 mx-4 font-bold">ACTIVITIES</p>
         </div>
         <div className="flex flex-col items-center">

@@ -38,9 +38,9 @@ function Footer() {
               Think of Wozco as that friend who’s always on the same wavelength
               as you. We get your vibe, your energy, and your desire for
               unforgettable memories. And guess what? We’re not just here to
-              recommend experiences - we are here to matchmake you with the
+              recommend experiences - <span className=" font-bold">we are here to matchmake you with the
               activities and hangout buddies that sync perfectly with your
-              style.
+              style.</span>
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-[#F7CC00]">
