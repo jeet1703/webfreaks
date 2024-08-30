@@ -20,6 +20,8 @@ import ExploreGenres from './Components/ExploreGenres';
 import FriendSection from './Components/FriendSection';
 import PyramidSection from './Components/PyramidSection';
 import TrendingSection from './Components/TrendingSection';
+import ThisIsUsSection from './Components/ThisIsUsSection';
+import OrbitalSection from './Components/OrbitalSection';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -84,7 +86,7 @@ function App() {
               }
             />
             <Route
-              path="/about-us"
+              path="/connect"
               element={
                 <>
                   <Laughhome />
@@ -97,7 +99,16 @@ function App() {
               }
             />
             <Route
-              path="/products"
+              path='/about-us'
+              element={
+                <>
+                  <OrbitalSection/>
+                  <ThisIsUsSection/>
+                </>
+              }
+              ></Route>
+            <Route
+              path="/fun"
               element={
                 <>
                   <Villan />

@@ -17,11 +17,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between p-7 px-30 max-w-6xl mx-auto">
           {/* Logo */}
           <div className="flex items-center">
+            <Link to="/">
             <img src="logo.png" loading="eager" alt="Wozoo Logo" className="h-8 w-auto" />
+            </Link> 
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex md:ml-auto md:mr-20 space-x-48">
+          <nav className="hidden md:flex md:ml-auto md:mr-20 space-x-40">
             {navigationLinks.map((item) => (
               <Link
                 key={item.id}

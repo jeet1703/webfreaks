@@ -1,5 +1,6 @@
 import React from 'react';
 import "../App.css"; // Ensure this path is correct
+import { Link } from 'react-router-dom';
 
 const FriendSection = () => {
   return (
@@ -25,9 +26,11 @@ const FriendSection = () => {
             <button className="bg-[#f31EB1] hover:bg-pink-500 text-white py-6 text-xl md:text-3xl px-20 md:px-32 rounded-lg">
               Get new friends
             </button>
+            <Link to="/connect">
             <p className="md:ml-14 text-pink-500 text-2xl font-bold mt-4 md:mt-0 order-first md:order-none">
               CONNECT
             </p>
+            </Link>
           </div>
         </div>
       </div>
