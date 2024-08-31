@@ -1,6 +1,6 @@
 import React from 'react';
-import alien from '/alien.png'; // Replace with the correct path to alien.png
-import orbitImage from '/Ellipse.png'; // Replace with the correct path to Ellipse.png
+import alien from '/alien.webp'; // Replace with the correct path to alien.png
+import orbitImage from '/Ellipse.webp'; // Replace with the correct path to Ellipse.png
 
 const OrbitalSection = () => {
   return (
