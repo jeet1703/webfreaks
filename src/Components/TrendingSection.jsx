@@ -39,14 +39,14 @@ function TrendingSection() {
   ];
 
   return (
-    <div className="starsection text-white  px-10 md:px-24 md:-mt-[6%] z-30 ">
+    <div className="starsection text-white  px-10 py-10  md:-mt-[6%] z-30 ">
       <div className="flex items-center mb-10">
         <img src="./bal.svg" alt="Explore Icon" className="w-auto z-30" />
         <h2 className="text-2xl md:text-4xl font-bold z-30">Trending</h2>
       </div>
 
       {/* Adjust the grid layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-10 md:gap-14  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:px-24 lg:grid-cols-4  gap-10 md:gap-14  ">
         {events.map((event, index) => (
           <EventCard key={index} event={event} />
         ))}

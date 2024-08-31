@@ -91,7 +91,6 @@ function App() {
                 <>
                   <Laughhome />
                   <Bored />
-                  <ExploreGenres />
                   <Timer />
                   <HandSection />
                   <Footer />
@@ -113,6 +112,7 @@ function App() {
                 <>
                   <Villan />
                   <TrendingSection />
+                  <ExploreGenres/>
                   <FriendSection />
                   <PyramidSection />
                   <Timer />
