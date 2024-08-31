@@ -6,10 +6,10 @@ const PlayerSection = () => {
     <div className="  py-20 px-6">
       {/* Player Images */}
       <div className="flex flex-col items-center space-y-10">
-        <img src="/player1.webp" alt="Player 1" className="w-full max-w-6xl" />
-        <img src="/player2.webp" alt="Player 2" className="w-full  max-w-6xl" />
-        <img src="/player3.webp" alt="Player 3" className="w-full  max-w-6xl" />
-        <img src="/player4.webp" alt="Player 4" className="w-full  max-w-6xl" />
+        <img src="/player1.webp" alt="Player 1" loading='eager' className="w-full max-w-6xl" />
+        <img src="/player2.webp" alt="Player 2" loading='eager' className="w-full  max-w-6xl" />
+        <img src="/player3.webp" alt="Player 3" loading='eager' className="w-full  max-w-6xl" />
+        <img src="/player4.webp" alt="Player 4" loading='eager' className="w-full  max-w-6xl" />
       </div>
 
       {/* Bottom Image */}
