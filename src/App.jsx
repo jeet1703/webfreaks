@@ -22,6 +22,8 @@ import PyramidSection from './Components/PyramidSection';
 import TrendingSection from './Components/TrendingSection';
 import ThisIsUsSection from './Components/ThisIsUsSection';
 import OrbitalSection from './Components/OrbitalSection';
+import WozooWorld from './Components/WozooWorld';
+import PlayerSection from './Components/PlayerSection';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -117,6 +119,16 @@ function App() {
                   <PyramidSection />
                   <Timer />
                   <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/products"
+              element={
+                <>
+                 <WozooWorld/>
+                 <PlayerSection/>
+                 <Footer/>
                 </>
               }
             />

@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full z-50">
       <div className="hidden md:block absolute inset-0 w-auto bg-cover bg-transparent bg-center bg-opacity-10 opacity-80" style={{ backgroundImage: 'url("/subtlegrad.png")' }}></div>
       <div className="relative bg-opacity-20">
-        <div className="flex items-center justify-between p-7 px-30 max-w-6xl mx-auto">
+        <div className="flex items-center justify-between p-7 px-30 max-w-7xl mx-auto">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/">
