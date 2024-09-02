@@ -1,14 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { navigationLinks } from "../constants";
 
-// This is a simplified Navbar component
 const Navbar = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
+  const [shouldScrollToProducts, setShouldScrollToProducts] = useState(false); // New state
+  const navigate = useNavigate();
 
   const toggleNavigation = () => {
     setOpenNavigation((prev) => !prev);
   };
+
+  const handleProductClick = () => {
+    setShouldScrollToProducts(true); // Set state to trigger scroll
+    navigate('/');
+  };
+
+  useEffect(() => {
+    if (shouldScrollToProducts) {
+      setTimeout(() => {
+        const section = document.getElementById('products-section');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+        setShouldScrollToProducts(false); // Reset state after scroll
+      }, 100);
+    }
+  }, [shouldScrollToProducts]);
 
   return (
     <div className="fixed top-0 left-0 w-full z-50">
@@ -18,7 +36,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/">
-            <img src="logo.png" loading="eager" alt="Wozoo Logo" className="h-8 w-auto" />
+              <img src="logo.png" loading="eager" alt="Wozoo Logo" className="h-8 w-auto" />
             </Link> 
           </div>
 
@@ -27,8 +45,9 @@ const Navbar = () => {
             {navigationLinks.map((item) => (
               <Link
                 key={item.id}
-                to={item.url}
+                to={item.id === 5 ? '#' : item.url} // 'Products' link does not navigate directly
                 className="text-white hover:text-[#F7CC00] font-quicksand transition-colors"
+                onClick={item.id === 5 ? handleProductClick : undefined} // 'Products' link triggers scroll
               >
                 {item.title}
               </Link>
@@ -64,9 +83,9 @@ const Navbar = () => {
               {navigationLinks.map((item) => (
                 <Link
                   key={item.id}
-                  to={item.url}
+                  to={item.id === 5 ? '#' : item.url}
                   className="text-white text-lg hover:text-[#F7CC00] transition-colors"
-                  onClick={toggleNavigation} // Close menu on link click
+                  onClick={item.id === 5 ? () => { toggleNavigation(); handleProductClick(); } : toggleNavigation} // Handle scroll in mobile view
                 >
                   {item.title}
                 </Link>
