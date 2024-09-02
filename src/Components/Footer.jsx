@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -65,29 +66,29 @@ function Footer() {
               <h3 className="font-bold text-xl text-white mb-2">Our Company</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/about-us" className="hover:text-[#F7CC00] text-white">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Press
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Partnerships
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -97,29 +98,29 @@ function Footer() {
               <h3 className="font-bold text-xl text-white mb-2">Resources</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     List with Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Advertise with Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -129,29 +130,29 @@ function Footer() {
               <h3 className="font-bold text-xl text-white mb-2">Connect with Us</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Social Media
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Newsletter
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Help Center
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#F7CC00] text-white">
+                  <Link to="/" className="hover:text-[#F7CC00] text-white">
                     Community
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
