@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   const handleProductClick = () => {
-      navigate('/');
-      setShouldScrollToProducts(true);
+    setShouldScrollToProducts(true);
+    navigate('/'); // Ensure that it navigates to the home page where the products section is located
   };
 
   useEffect(() => {
@@ -45,9 +45,9 @@ const Navbar = () => {
             {navigationLinks.map((item) => (
               <Link
                 key={item.id}
-                to={item.id === 3 ? '#' : item.url}
+                to={item.id === 3 ? '/' : item.url}
                 className="text-white hover:text-[#F7CC00] font-quicksand transition-colors"
-                onClick={item.id === 5 ? handleProductClick : undefined}
+                onClick={item.id === 3 ? handleProductClick : undefined}
               >
                 {item.title}
               </Link>
@@ -83,9 +83,9 @@ const Navbar = () => {
               {navigationLinks.map((item) => (
                 <Link
                   key={item.id}
-                  to={item.id === 5 ? '#' : item.url}
+                  to={item.id === 3 ? '/' : item.url}
                   className="text-white text-lg hover:text-[#F7CC00] transition-colors"
-                  onClick={item.id === 5 ? () => { toggleNavigation(); handleProductClick(); } : toggleNavigation}
+                  onClick={item.id === 3 ? () => { toggleNavigation(); handleProductClick(); } : toggleNavigation}
                 >
                   {item.title}
                 </Link>
@@ -99,3 +99,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
