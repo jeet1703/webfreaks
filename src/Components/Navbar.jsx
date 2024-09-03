@@ -4,7 +4,7 @@ import { navigationLinks } from "../constants";
 
 const Navbar = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
-  const [shouldScrollToProducts, setShouldScrollToProducts] = useState(false); // New state
+  const [shouldScrollToProducts, setShouldScrollToProducts] = useState(false);
   const navigate = useNavigate();
 
   const toggleNavigation = () => {
@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   const handleProductClick = () => {
-    setShouldScrollToProducts(true); // Set state to trigger scroll
-    navigate('/');
+      navigate('/');
+      setShouldScrollToProducts(true);
   };
 
   useEffect(() => {
@@ -23,8 +23,8 @@ const Navbar = () => {
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-        setShouldScrollToProducts(false); // Reset state after scroll
-      }, 100);
+        setShouldScrollToProducts(false);
+      }, 100); // Adjust this timeout if needed
     }
   }, [shouldScrollToProducts]);
 
@@ -45,9 +45,9 @@ const Navbar = () => {
             {navigationLinks.map((item) => (
               <Link
                 key={item.id}
-                to={item.id === 5 ? '#' : item.url} // 'Products' link does not navigate directly
+                to={item.id === 3 ? '#' : item.url}
                 className="text-white hover:text-[#F7CC00] font-quicksand transition-colors"
-                onClick={item.id === 5 ? handleProductClick : undefined} // 'Products' link triggers scroll
+                onClick={item.id === 5 ? handleProductClick : undefined}
               >
                 {item.title}
               </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   key={item.id}
                   to={item.id === 5 ? '#' : item.url}
                   className="text-white text-lg hover:text-[#F7CC00] transition-colors"
-                  onClick={item.id === 5 ? () => { toggleNavigation(); handleProductClick(); } : toggleNavigation} // Handle scroll in mobile view
+                  onClick={item.id === 5 ? () => { toggleNavigation(); handleProductClick(); } : toggleNavigation}
                 >
                   {item.title}
                 </Link>
